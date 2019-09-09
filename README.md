@@ -46,10 +46,10 @@ $(function() {
 
 * onChange(activeTabIndex, tabs, panes)
 
-this - jQuery wrapper on the element passed to tabbify, the same object returned by tabbify() and API accessible through.
-activeTabIndex - Index of the currently active tab beginnig from zero after change occurs.
-tabs - 'ul > li > a' jQuery tabs collection.
-panes - '.tab-pane' jQuery panes collection.
+    - this - jQuery wrapper on the element passed to tabbify, the same object returned by tabbify() and API accessible through.
+    - activeTabIndex - Index of the currently active tab beginnig from zero after change occurs.
+    - tabs - 'ul > li > a' jQuery tabs collection.
+    - panes - '.tab-pane' jQuery panes collection.
 
 ## API
 
@@ -62,3 +62,5 @@ panes - '.tab-pane' jQuery panes collection.
 * isLast() - whether last tab selected.
 
 First three also return tabbify api object so calls can be chained like `tabs.next().next()`.
+
+## Provided without warranty under the MIT license
