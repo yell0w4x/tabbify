@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <title>Tabbify example</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" href="../dist/tabbify.min.css">
+</head>
+
+<body>
+    <div id="tabs" class="tabs">
+        <ul>
+            <li><a href="#" class="active">Foreword</a></li>
+            <li><a href="#">Main</a></li>
+            <li><a href="#afterword">Afterword</a></li>
+        </ul>
+
+        <div class="panes">
+            <div class="tab-pane active">
+                <h1>Foreword</h1>
+            </div>
+
+            <div class="tab-pane">
+                <h1>Main</h1>
+            </div>
+            
+            <div class="tab-pane" id="#afterword">
+                <h1>Afterword</h1>
+            </div>
+        </div>
+    </div>
+    <div id="selected-tab-index">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../dist/tabbify.min.js"></script>
+<script>
+$(function() {
+    var tabs = $('#tabs').tabbify({
+        onChange: function(index) { 
+            $('#selected-tab-index').text(`Selected tab index: ${index}`);
+        } 
+    });
+    tabs.next();
+});
+</script>
+    
+</body>
+</html>
