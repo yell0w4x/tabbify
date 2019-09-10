@@ -1,5 +1,7 @@
 # tabbify jQuery plugin
 
+![tabbify](https://user-images.githubusercontent.com/43479456/64606755-a7e4ee00-d3cf-11e9-9169-571364a5ce7c.png)
+
 `ul` element specifies tabs and `div` with `panes` class defines panels. You can either use `id` and `href` 
 attributes to link up tabs with panes together or just leave it blank. In latter zero based index is used to make things work.
 Use predefined css or define your own rules to make desired appearance.
