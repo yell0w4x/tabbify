@@ -1,5 +1,8 @@
 # tabbify jQuery plugin
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
 ![tabbify](https://user-images.githubusercontent.com/43479456/64606755-a7e4ee00-d3cf-11e9-9169-571364a5ce7c.png)
 
 `ul` element specifies tabs and `div` with `panes` class defines panels. You can either use `id` and `href` 
