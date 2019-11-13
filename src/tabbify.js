@@ -29,8 +29,7 @@
                     $(e.target).addClass('active');
                 } else {
                     var pane = $(tabName);
-                    if (pane.length == 0)
-                    {
+                    if (pane.length == 0) {
                         pane = $(panes[i]);
                     }
 
@@ -70,9 +69,15 @@
             return thiz;
         };
 
-        this.changeTab = function(index) {
-            if (index < tabs.length && index >= 0) {
-                tabs[index].click();
+        this.changeTab = function(selector) {
+            if ($.type(selector) === 'number') {
+                if (selector < tabs.length && selector >= 0) {
+                    tabs[selector].click();
+                }
+            } else if ($.type(selector) === 'string') {
+                $(thiz).find(selector).click();
+            } else if ($.type(selector) === 'object') {
+                selector.click();
             }
 
             return thiz;

@@ -50,16 +50,18 @@ $(function() {
 
     - this - jQuery wrapper on the element passed to tabbify, the same object returned by tabbify() and API accessible through.
     - activeTabIndex - Index of the currently active tab beginnig from zero after change occurs.
-    - tabs - 'ul > li > a' jQuery tabs collection.
-    - panes - '.tab-pane' jQuery panes collection.
+    - tabs - `ul > li > a` jQuery tabs collection.
+    - panes - `.tab-pane` jQuery panes collection.
 
 ## API
 
 * prev() - Select previous tab
 * next() - Select next tab
-* changeTab(index) - Select tab having index specified.
-* tabs() - 'ul > li > a' jQuery tabs collection.
-* panes() - '.tab-pane' jQuery panes collection.
+* changeTab(selector) - Select a tab designated by `selector`. Selector can be
+  tab index, dom selector string or jquery object. It's assumed the object or
+  string designates `ul > li > a` element(s).
+* tabs() - `ul > li > a` jQuery tabs collection.
+* panes() - `.tab-pane` jQuery panes collection.
 * isFirst() - whether first tab selected.
 * isLast() - whether last tab selected.
 
