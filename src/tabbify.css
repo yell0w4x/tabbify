@@ -3,7 +3,7 @@
     margin: 0;
     list-style: none;
     border-bottom: solid 1px #c8c8c8;
-    height: 2.5em;
+    height: 2em;
     font-size: 1.5em;
     text-align: center;
 }
@@ -11,12 +11,10 @@
 .tabs > ul > li {
     display: inline-block;
     position: relative;
-    height: calc(2.5em + 1px);
-    overflow: hidden;
 }
 
 .tabs > ul > li > a {
-    height: 2.5em;
+    height: calc(2em + 1px);
     display: inline-block;
     padding: 8px 16px;
     color: #c8c8c8;
@@ -25,6 +23,7 @@
     border-bottom: none;
     text-decoration: none;
     outline: none;
+    box-sizing: border-box;
 }
 
 @media (max-width: 650px) {
